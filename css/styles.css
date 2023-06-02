@@ -6,7 +6,7 @@ body {
 
 :root {
   --bg-color: #ffffff;
-  --logo-color: #2e2f42;
+  --color-text: #2e2f42;
 }
 
 .header-logo {
@@ -24,5 +24,18 @@ body {
 }
 
 .span {
-  color: var(--logo-color);
+  color: var(--color-text);
+}
+
+.header-list-title {
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--color-text);
+}
+.header-list-title:hover {
+  color: #404bbf;
+}
+.header-list-title:focus {
+  color: #404bbf;
 }
