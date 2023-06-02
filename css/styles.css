@@ -6,7 +6,8 @@ body {
 
 :root {
   --bg-color: #ffffff;
-  --color-text: #2e2f42;
+  --color-text-title: #2e2f42;
+  --color-text-paragraf: #434455;
 }
 
 .header-logo {
@@ -24,18 +25,36 @@ body {
 }
 
 .span {
-  color: var(--color-text);
+  color: var(--color-text-title);
 }
 
 .header-list-title {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--color-text);
+  color: var(--color-text-title);
 }
 .header-list-title:hover {
   color: #404bbf;
 }
 .header-list-title:focus {
+  color: #404bbf;
+}
+.address {
+  font-style: normal;
+}
+.list {
+  list-style: none;
+}
+.address-title {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--color-text-paragraf);
+}
+.address-title:hover {
+  color: #404bbf;
+}
+.address-title:focus {
   color: #404bbf;
 }
