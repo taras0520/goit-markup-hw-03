@@ -6,6 +6,7 @@ body {
 
 :root {
   --bg-color: #ffffff;
+  --logo-color: #2e2f42;
 }
 
 .header-logo {
@@ -23,5 +24,5 @@ body {
 }
 
 .span {
-  color: #2e2f42;
+  color: var(--logo-color);
 }
