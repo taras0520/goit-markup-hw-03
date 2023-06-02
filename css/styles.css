@@ -3,6 +3,7 @@ body {
   color: #434455;
   background-color: var(--bg-color);
 }
+
 :root {
   --bg-color: #ffffff;
 }
