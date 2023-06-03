@@ -163,6 +163,7 @@ body {
   background-color: var(--color-footer-text);
   cursor: pointer;
 }
+
 .portfolio-btn:is(:hover, :focus) {
   color: #ffffff;
   background-color: #404bbf;
