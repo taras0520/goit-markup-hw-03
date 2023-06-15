@@ -37,6 +37,7 @@ img {
   --color-text-paragraph: #434455;
   --color-logo: #4d5ae5;
   --color-footer-text: #f4f4fd;
+  --border-btn: #e7e9fc;
 }
 .container {
   width: 100%;
@@ -293,22 +294,20 @@ img {
   padding-bottom: 120px;
 }
 .btn-list {
-  margin-right: 427px;
-  margin-left: 427px;
+  justify-content: center;
+
   display: flex;
   max-width: 100%;
 
   gap: 24px;
 
   box-sizing: content-box;
+  margin-bottom: 72px;
 }
 .btn-item {
 }
 .portfolio-btn {
-  align-items: center;
-  text-align: center;
-
-  min-width: calc((100% -96px) / 5);
+  padding: 12px 24px;
 
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -318,19 +317,33 @@ img {
   color: var(--color-logo);
   background-color: var(--color-footer-text);
   cursor: pointer;
+  border: 1px solid var(--border-btn);
+  border-radius: 4px;
 }
 
 .portfolio-btn:is(:hover, :focus) {
   color: #ffffff;
   background-color: #404bbf;
+  border: 1px solid transparent;
 }
 
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+.portfolio-list-item {
+  width: calc((100% - 48px) / 3);
+}
+
+.prtf-list-class {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
 }
 .portfolio-list-subtitle {
+  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
