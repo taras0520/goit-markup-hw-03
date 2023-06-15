@@ -73,6 +73,7 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--color-logo);
+  margin-right: 76px;
 }
 
 .span {
@@ -84,6 +85,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--color-text-title);
+  padding: 24px 0;
 }
 .header-list-title:is(:hover, :focus) {
   color: #404bbf;
@@ -115,7 +117,7 @@ img {
 /**-----------------HERO----------------*/
 .hero {
   max-width: 100%;
-  padding-bottom: 60px;
+  padding: 188px 0;
 }
 
 .hero-container {
@@ -136,7 +138,9 @@ img {
   color: #ffffff;
 }
 .hero-btn {
+  display: block;
   min-width: 169px;
+  margin: 0 auto;
   height: 56px;
   border-radius: 4px;
   border: none;
@@ -154,8 +158,12 @@ img {
 }
 /**-----------------SECTION1----------------*/
 .qualities {
-  padding-top: 120px;
-  padding-bottom: 60px;
+  padding: 120px 0;
+}
+
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
 }
 .qualities-list {
   display: flex;
@@ -165,7 +173,7 @@ img {
 .qualities-item {
   width: calc((100 - 72px) / 4);
 }
-.qualities-title {
+.qualities-subtitle {
   margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
@@ -182,9 +190,8 @@ img {
 }
 /**-----------------SECTION2----------------*/
 
-.container-doing {
-  padding-top: 60px;
-  padding-bottom: 60px;
+.doing {
+  padding-bottom: 120px;
 }
 .doing-list {
   list-style-type: none;
@@ -196,7 +203,7 @@ img {
   width: calc((100% - 48px) / 3);
 }
 
-.doing {
+.doing-title {
   min-width: 323px;
   margin: 0 auto;
   margin-bottom: 72px;
@@ -210,7 +217,7 @@ img {
 /**-----------------SECTION3----------------*/
 .team {
   background-color: #f4f4fd;
-  padding-bottom: 120px;
+  padding-bottom: 120px 0;
 }
 .team-list {
   display: flex;
@@ -218,6 +225,7 @@ img {
   gap: 24px;
 }
 .team-title {
+  margin-bottom: 72px;
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
@@ -232,9 +240,11 @@ img {
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
 }
+.team-cont {
+  padding: 32px 16px 32px;
+}
 .team-subtitle {
   text-align: center;
-  margin-top: 32px;
   margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
@@ -253,15 +263,12 @@ img {
 /**-----------------FOOTER----------------*/
 .footer {
   max-width: 100%;
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-.footer-container {
-  box-sizing: content-box;
-  padding: 140px 1020px 100px 156px;
+  padding: 100px 0;
   background-color: var(--color-text-title);
 }
+
 .footer-logo {
+  display: inline-block;
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   font-size: 18px;
@@ -269,11 +276,10 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--color-logo);
-  margin-bottom: 17.5px;
+  margin-bottom: 16px;
 }
 .footer-logo-span {
   color: #f4f4fd;
-  margin-bottom: 17.5px;
 }
 .footer-text {
   line-height: 1.5;
